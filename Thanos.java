@@ -29,8 +29,7 @@ public class Thanos {
    	  heroes.add(new Hero("Doctor Strange", 42));
 
         // TODO 3 : It's Thor birthday, now he's 1501
-   	  heroes.set(5,new Hero("Thor", 1501));
-   	  
+   	  heroes.get(6).setAge(1501);	  
 
         // TODO 4 : Shuffle the heroes list
    	  Collections.shuffle(heroes);
@@ -40,7 +39,10 @@ public class Thanos {
 
         // TODO 6 : Loop throught the list and display the name of the remaining heroes
    	  for (Hero hero : halfList) {
-   		  System.out.println(hero.getName());
+   		  System.out.print("Nom : " + hero.getName() + "");
+   		  System.out.println(" ");
+   		  System.out.print("Age : " + hero.getAge());
+   		  System.out.println(" ");
    	  }
     }
 }
